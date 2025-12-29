@@ -15,25 +15,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Kiểm tra code
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
 
-      # Cài Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
 
-      # Build site
       - name: Build
         run: hugo --minify
 
-      # Tải kết quả ra artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
