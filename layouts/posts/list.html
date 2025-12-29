@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div style="text-align: center; margin-bottom: 2rem;">
+  <h1 style="margin-top: 1rem; color: #333;">Blog Posts</h1>
+  <p style="font-size: 1.1rem; color: #666;">Các bài viết về lập trình Java và JavaScript</p>
+</div>
+
+<div style="max-width: 1000px; margin: 0 auto; padding: 0 1rem;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
+    {{ range .Pages }}
+    <div style="background: #f8f9fa; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s;">
+      <div style="text-align: center; padding: 1rem;">
+        <img src="https://phuxuan.edu.vn/wp-content/uploads/2020/05/1-1.png" alt="Avatar" width="80" style="border-radius: 50%; border: 2px solid #007acc;">
+      </div>
+      <div style="padding: 1rem;">
+        <h2 style="margin: 0 0 0.5rem 0; font-size: 1.3rem;">
+          <a href="{{ .RelPermalink }}" style="color: #007acc; text-decoration: none;">{{ .Title }}</a>
+        </h2>
+        <p style="margin: 0; color: #666; font-size: 0.9rem;">{{ .Date.Format "January 2, 2006" }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

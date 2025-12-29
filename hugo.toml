@@ -1,0 +1,26 @@
+baseURL = "https://truongphu1709.github.io/blog-phu/"
+languageCode = "vi-vn"
+title = "Huỳnh Trường Phú | Cybersecurity Blog"
+theme = "ananke"
+
+[params.ananke]
+  show_recent_posts = false
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[markup.goldmark.renderer]
+  unsafe = true

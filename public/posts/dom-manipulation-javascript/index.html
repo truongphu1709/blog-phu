@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Thao tác DOM với JavaScript | Huỳnh Trường Phú | Cybersecurity Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Thao tác DOM với JavaScript
+DOM (Document Object Model) là một API cho phép JavaScript tương tác với HTML và CSS. DOM manipulation là kỹ năng cốt lõi để tạo trang web động.
+DOM là gì?
+DOM là một cấu trúc dạng cây đại diện cho cấu trúc của tài liệu HTML. Mỗi element HTML trở thành một node trong cây DOM.
+Các phương thức chọn element
+1. getElementById()
+let element = document.getElementById(&#34;myId&#34;);
+2. getElementsByClassName()
+let elements = document.getElementsByClassName(&#34;myClass&#34;);
+3. getElementsByTagName()
+let elements = document.getElementsByTagName(&#34;div&#34;);
+4. querySelector() và querySelectorAll()
+let element = document.querySelector(&#34;#myId .myClass&#34;);
+let elements = document.querySelectorAll(&#34;.myClass&#34;);
+Thay đổi nội dung
+1. innerHTML
+element.innerHTML = &#34;&lt;p&gt;New content&lt;/p&gt;&#34;;
+2. textContent
+element.textContent = &#34;New text content&#34;;
+3. innerText
+element.innerText = &#34;New text&#34;;
+Thay đổi style
+element.style.color = &#34;red&#34;;
+element.style.fontSize = &#34;20px&#34;;
+element.classList.add(&#34;newClass&#34;);
+element.classList.remove(&#34;oldClass&#34;);
+Tạo và thêm element
+let newElement = document.createElement(&#34;div&#34;);
+newElement.textContent = &#34;New element&#34;;
+document.body.appendChild(newElement);
+Sự kiện (Events)
+element.addEventListener(&#34;click&#34;, function() {
+    console.log(&#34;Element clicked!&#34;);
+});
+Ví dụ thực tế
+// Tạo todo list động
+function addTodo() {
+    let todoText = document.getElementById(&#34;todoInput&#34;).value;
+    let li = document.createElement(&#34;li&#34;);
+    li.textContent = todoText;
+    
+    let deleteBtn = document.createElement(&#34;button&#34;);
+    deleteBtn.textContent = &#34;Delete&#34;;
+    deleteBtn.addEventListener(&#34;click&#34;, function() {
+        li.remove();
+    });
+    
+    li.appendChild(deleteBtn);
+    document.getElementById(&#34;todoList&#34;).appendChild(li);
+}
+Việc thao tác DOM hiệu quả là chìa khóa để tạo user experience tốt trong ứng dụng web.">
+    <meta name="generator" content="Hugo 0.153.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/dom-manipulation-javascript/">
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/posts/dom-manipulation-javascript/">
+  <meta property="og:site_name" content="Huỳnh Trường Phú | Cybersecurity Blog">
+  <meta property="og:title" content="Thao tác DOM với JavaScript">
+  <meta property="og:description" content="Thao tác DOM với JavaScript DOM (Document Object Model) là một API cho phép JavaScript tương tác với HTML và CSS. DOM manipulation là kỹ năng cốt lõi để tạo trang web động.
+DOM là gì? DOM là một cấu trúc dạng cây đại diện cho cấu trúc của tài liệu HTML. Mỗi element HTML trở thành một node trong cây DOM.
+Các phương thức chọn element 1. getElementById() let element = document.getElementById(&#34;myId&#34;); 2. getElementsByClassName() let elements = document.getElementsByClassName(&#34;myClass&#34;); 3. getElementsByTagName() let elements = document.getElementsByTagName(&#34;div&#34;); 4. querySelector() và querySelectorAll() let element = document.querySelector(&#34;#myId .myClass&#34;); let elements = document.querySelectorAll(&#34;.myClass&#34;); Thay đổi nội dung 1. innerHTML element.innerHTML = &#34;&lt;p&gt;New content&lt;/p&gt;&#34;; 2. textContent element.textContent = &#34;New text content&#34;; 3. innerText element.innerText = &#34;New text&#34;; Thay đổi style element.style.color = &#34;red&#34;; element.style.fontSize = &#34;20px&#34;; element.classList.add(&#34;newClass&#34;); element.classList.remove(&#34;oldClass&#34;); Tạo và thêm element let newElement = document.createElement(&#34;div&#34;); newElement.textContent = &#34;New element&#34;; document.body.appendChild(newElement); Sự kiện (Events) element.addEventListener(&#34;click&#34;, function() { console.log(&#34;Element clicked!&#34;); }); Ví dụ thực tế // Tạo todo list động function addTodo() { let todoText = document.getElementById(&#34;todoInput&#34;).value; let li = document.createElement(&#34;li&#34;); li.textContent = todoText; let deleteBtn = document.createElement(&#34;button&#34;); deleteBtn.textContent = &#34;Delete&#34;; deleteBtn.addEventListener(&#34;click&#34;, function() { li.remove(); }); li.appendChild(deleteBtn); document.getElementById(&#34;todoList&#34;).appendChild(li); } Việc thao tác DOM hiệu quả là chìa khóa để tạo user experience tốt trong ứng dụng web.">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-29T00:00:00+00:00">
+
+  <meta itemprop="name" content="Thao tác DOM với JavaScript">
+  <meta itemprop="description" content="Thao tác DOM với JavaScript DOM (Document Object Model) là một API cho phép JavaScript tương tác với HTML và CSS. DOM manipulation là kỹ năng cốt lõi để tạo trang web động.
+DOM là gì? DOM là một cấu trúc dạng cây đại diện cho cấu trúc của tài liệu HTML. Mỗi element HTML trở thành một node trong cây DOM.
+Các phương thức chọn element 1. getElementById() let element = document.getElementById(&#34;myId&#34;); 2. getElementsByClassName() let elements = document.getElementsByClassName(&#34;myClass&#34;); 3. getElementsByTagName() let elements = document.getElementsByTagName(&#34;div&#34;); 4. querySelector() và querySelectorAll() let element = document.querySelector(&#34;#myId .myClass&#34;); let elements = document.querySelectorAll(&#34;.myClass&#34;); Thay đổi nội dung 1. innerHTML element.innerHTML = &#34;&lt;p&gt;New content&lt;/p&gt;&#34;; 2. textContent element.textContent = &#34;New text content&#34;; 3. innerText element.innerText = &#34;New text&#34;; Thay đổi style element.style.color = &#34;red&#34;; element.style.fontSize = &#34;20px&#34;; element.classList.add(&#34;newClass&#34;); element.classList.remove(&#34;oldClass&#34;); Tạo và thêm element let newElement = document.createElement(&#34;div&#34;); newElement.textContent = &#34;New element&#34;; document.body.appendChild(newElement); Sự kiện (Events) element.addEventListener(&#34;click&#34;, function() { console.log(&#34;Element clicked!&#34;); }); Ví dụ thực tế // Tạo todo list động function addTodo() { let todoText = document.getElementById(&#34;todoInput&#34;).value; let li = document.createElement(&#34;li&#34;); li.textContent = todoText; let deleteBtn = document.createElement(&#34;button&#34;); deleteBtn.textContent = &#34;Delete&#34;; deleteBtn.addEventListener(&#34;click&#34;, function() { li.remove(); }); li.appendChild(deleteBtn); document.getElementById(&#34;todoList&#34;).appendChild(li); } Việc thao tác DOM hiệu quả là chìa khóa để tạo user experience tốt trong ứng dụng web.">
+  <meta itemprop="datePublished" content="2025-12-29T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-29T00:00:00+00:00">
+  <meta itemprop="wordCount" content="210">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Thao tác DOM với JavaScript">
+  <meta name="twitter:description" content="Thao tác DOM với JavaScript DOM (Document Object Model) là một API cho phép JavaScript tương tác với HTML và CSS. DOM manipulation là kỹ năng cốt lõi để tạo trang web động.
+DOM là gì? DOM là một cấu trúc dạng cây đại diện cho cấu trúc của tài liệu HTML. Mỗi element HTML trở thành một node trong cây DOM.
+Các phương thức chọn element 1. getElementById() let element = document.getElementById(&#34;myId&#34;); 2. getElementsByClassName() let elements = document.getElementsByClassName(&#34;myClass&#34;); 3. getElementsByTagName() let elements = document.getElementsByTagName(&#34;div&#34;); 4. querySelector() và querySelectorAll() let element = document.querySelector(&#34;#myId .myClass&#34;); let elements = document.querySelectorAll(&#34;.myClass&#34;); Thay đổi nội dung 1. innerHTML element.innerHTML = &#34;&lt;p&gt;New content&lt;/p&gt;&#34;; 2. textContent element.textContent = &#34;New text content&#34;; 3. innerText element.innerText = &#34;New text&#34;; Thay đổi style element.style.color = &#34;red&#34;; element.style.fontSize = &#34;20px&#34;; element.classList.add(&#34;newClass&#34;); element.classList.remove(&#34;oldClass&#34;); Tạo và thêm element let newElement = document.createElement(&#34;div&#34;); newElement.textContent = &#34;New element&#34;; document.body.appendChild(newElement); Sự kiện (Events) element.addEventListener(&#34;click&#34;, function() { console.log(&#34;Element clicked!&#34;); }); Ví dụ thực tế // Tạo todo list động function addTodo() { let todoText = document.getElementById(&#34;todoInput&#34;).value; let li = document.createElement(&#34;li&#34;); li.textContent = todoText; let deleteBtn = document.createElement(&#34;button&#34;); deleteBtn.textContent = &#34;Delete&#34;; deleteBtn.addEventListener(&#34;click&#34;, function() { li.remove(); }); li.appendChild(deleteBtn); document.getElementById(&#34;todoList&#34;).appendChild(li); } Việc thao tác DOM hiệu quả là chìa khóa để tạo user experience tốt trong ứng dụng web.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Huỳnh Trường Phú | Cybersecurity Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/" title="Home page">
+              Home
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/posts/" title="Blog page">
+              Blog
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Blog
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Thao tác DOM với JavaScript</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2025-12-29T00:00:00Z">December 29, 2025</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><h1 id="thao-tác-dom-với-javascript">Thao tác DOM với JavaScript</h1>
+<p>DOM (Document Object Model) là một API cho phép JavaScript tương tác với HTML và CSS. DOM manipulation là kỹ năng cốt lõi để tạo trang web động.</p>
+<h2 id="dom-là-gì">DOM là gì?</h2>
+<p>DOM là một cấu trúc dạng cây đại diện cho cấu trúc của tài liệu HTML. Mỗi element HTML trở thành một node trong cây DOM.</p>
+<h2 id="các-phương-thức-chọn-element">Các phương thức chọn element</h2>
+<h3 id="1-getelementbyid">1. getElementById()</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">element</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;myId&#34;</span>);
+</span></span></code></pre></div><h3 id="2-getelementsbyclassname">2. getElementsByClassName()</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">elements</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementsByClassName</span>(<span style="color:#e6db74">&#34;myClass&#34;</span>);
+</span></span></code></pre></div><h3 id="3-getelementsbytagname">3. getElementsByTagName()</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">elements</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#34;div&#34;</span>);
+</span></span></code></pre></div><h3 id="4-queryselector-và-queryselectorall">4. querySelector() và querySelectorAll()</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">element</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;#myId .myClass&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">elements</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;.myClass&#34;</span>);
+</span></span></code></pre></div><h2 id="thay-đổi-nội-dung">Thay đổi nội dung</h2>
+<h3 id="1-innerhtml">1. innerHTML</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;p&gt;New content&lt;/p&gt;&#34;</span>;
+</span></span></code></pre></div><h3 id="2-textcontent">2. textContent</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;New text content&#34;</span>;
+</span></span></code></pre></div><h3 id="3-innertext">3. innerText</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">innerText</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;New text&#34;</span>;
+</span></span></code></pre></div><h2 id="thay-đổi-style">Thay đổi style</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">fontSize</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;20px&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;newClass&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">remove</span>(<span style="color:#e6db74">&#34;oldClass&#34;</span>);
+</span></span></code></pre></div><h2 id="tạo-và-thêm-element">Tạo và thêm element</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">newElement</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;div&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">newElement</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;New element&#34;</span>;
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">newElement</span>);
+</span></span></code></pre></div><h2 id="sự-kiện-events">Sự kiện (Events)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Element clicked!&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h2 id="ví-dụ-thực-tế">Ví dụ thực tế</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Tạo todo list động
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">addTodo</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">todoText</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;todoInput&#34;</span>).<span style="color:#a6e22e">value</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">li</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;li&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">li</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">todoText</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">deleteBtn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;button&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">deleteBtn</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Delete&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">deleteBtn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">li</span>.<span style="color:#a6e22e">remove</span>();
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">li</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">deleteBtn</span>);
+</span></span><span style="display:flex;"><span>    document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;todoList&#34;</span>).<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">li</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Việc thao tác DOM hiệu quả là chìa khóa để tạo user experience tốt trong ứng dụng web.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div></article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
+    &copy;  Huỳnh Trường Phú | Cybersecurity Blog 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
