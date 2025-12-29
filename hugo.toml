@@ -6,7 +6,7 @@ theme = "ananke"
 [params]
   author = "Huỳnh Trường Phú"
   description = "Cybersecurity Blog"
-  avatar = "/images/avatar.png"
+  avatar = "/images/avatar/avatar.png"
 
 [params.ananke]
   show_recent_posts = false
