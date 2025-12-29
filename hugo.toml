@@ -3,6 +3,11 @@ languageCode = "vi-vn"
 title = "Huỳnh Trường Phú | Cybersecurity Blog"
 theme = "ananke"
 
+[params]
+  author = "Huỳnh Trường Phú"
+  description = "Cybersecurity Blog"
+  avatar = "/images/avatar.jpg"
+
 [params.ananke]
   show_recent_posts = false
 
