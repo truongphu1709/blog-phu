@@ -7,7 +7,7 @@ title: ""
     src="https://truongphu1709.github.io/blog-phu/images/avatar/avatar.png"
     alt="Huỳnh Trường Phú"
     width="180"
-    style="border-radius:50%; display:block; margin:auto;"
+    style="display:block; margin:auto;"
   >
 </p>
 
