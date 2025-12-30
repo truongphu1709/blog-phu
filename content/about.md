@@ -18,7 +18,7 @@ title: "Giới thiệu | Huỳnh Trường Phú"
 
 ---
 
-## 🧑‍💻 Giới thiệu bản thân
+##  Giới thiệu bản thân
 
 Tôi là **Huỳnh Trường Phú**, sinh viên ngành **Công nghệ Thông tin**, chuyên ngành **An ninh mạng** tại Trường Đại học Công nghệ TP. Hồ Chí Minh (HUTECH). Tôi lựa chọn theo đuổi lĩnh vực an ninh mạng với mong muốn hiểu rõ cách các hệ thống công nghệ được xây dựng, vận hành và bảo vệ trước những mối đe dọa trong môi trường số ngày càng phát triển.
 
@@ -26,7 +26,7 @@ Trong quá trình học tập, tôi đặc biệt chú trọng vào các kiến 
 
 ---
 
-## 🎓 Học vấn
+##  Học vấn
 
 - **Trường:** Đại học Công nghệ TP. Hồ Chí Minh (HUTECH)  
 - **Ngành:** Công nghệ Thông tin  
@@ -34,7 +34,7 @@ Trong quá trình học tập, tôi đặc biệt chú trọng vào các kiến 
 
 ---
 
-## 🎯 Định hướng học tập và phát triển
+##  Định hướng học tập và phát triển
 
 Mục tiêu của tôi là phát triển theo hướng **kỹ sư an ninh mạng**, có khả năng phân tích, đánh giá và đề xuất các giải pháp bảo mật cho hệ thống và ứng dụng. Tôi tập trung nghiên cứu các nội dung như **OWASP Top 10**, **bảo mật ứng dụng Web**, **mã hóa dữ liệu**, **xác thực – phân quyền**, cũng như các kỹ thuật **phát hiện và phòng chống lỗ hổng bảo mật**.
 
@@ -42,7 +42,7 @@ Song song đó, tôi rèn luyện kỹ năng lập trình với các ngôn ngữ
 
 ---
 
-## 💡 Lĩnh vực quan tâm
+##  Lĩnh vực quan tâm
 
 - An ninh mạng và an toàn thông tin  
 - Mạng máy tính và giao thức truyền thông  
@@ -52,13 +52,13 @@ Song song đó, tôi rèn luyện kỹ năng lập trình với các ngôn ngữ
 
 ---
 
-## 📝 Về blog này
+##  Về blog này
 
 Blog cá nhân được xây dựng như một **nhật ký học tập và nghiên cứu**, nơi tôi ghi lại quá trình học tập, các kiến thức chuyên môn, bài thực nghiệm, demo kỹ thuật và kinh nghiệm thực tế trong quá trình làm bài tập lớn và đồ án chuyên ngành. Tôi hy vọng nội dung trên blog có thể hỗ trợ các bạn sinh viên và những người quan tâm đến lĩnh vực công nghệ thông tin, đặc biệt là an ninh mạng.
 
 ---
 
-## 📬 Liên hệ
+##  Liên hệ
 
 - 💻 GitHub: https://github.com/truongphu1709  
 - 🌐 Blog: https://truongphu1709.github.io/blog-phu  
