@@ -1,12 +1,11 @@
 ---
-title: "Giới thiệu | Huỳnh Trường Phú"
+title: "Giới thiệu"
 ---
 
 <div align="center">
 
 <img
   src="https://truongphu1709.github.io/blog-phu/images/avatar/avatar.png"
-  alt="Huỳnh Trường Phú"
   width="160"
 />
 
